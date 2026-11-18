@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Pluck</title>
+  <meta name="description" content="Adam Pluck: growth, data and automation lead in London, and builder of small products like psyconnect.london, refund.fi and aluba.">
+  <meta property="og:title" content="Adam Pluck">
+  <meta property="og:description" content="Growth, data and automation for startups, and things I've built myself.">
+  <meta property="og:image" content="img/adam.jpg">
+  <meta name="theme-color" content="#ece9e2">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,0..100,0..1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mark" href="#top">Adam Pluck</a>
+  <nav aria-label="Sections">
+    <a href="#built">Built</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>I grow startups, and I build things.</h1>
+      <p class="lede">I'm Adam, a growth and data lead in London with nearly 20 years in high-growth startups. Most recently I ran growth and data at Ready (formerly Argent). Before that I was employee #4 at LoveCrafts. Lately I also design, build and run my own products, start to finish.</p>
+      <p class="avail">Open to growth, martech and automation roles, and small freelance jobs.</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/adampluck/">LinkedIn</a></li>
+        <li><a href="https://github.com/adampluck">GitHub</a></li>
+      </ul>
+    </div>
+    <figure class="polaroid">
+      <img src="img/adam.jpg" alt="Adam, smiling, with the sea and an evening sky behind him" width="512" height="512">
+      <figcaption class="hand">hello!</figcaption>
+    </figure>
+
+    <div class="stickers">
+      <p class="hand stickers-note">a few things I've made</p>
+      <ul>
+        <li><a href="#p-psyconnect" title="psyconnect.london"><img src="img/logos/psyconnect.svg" alt="psyconnect.london" width="56" height="56"></a></li>
+        <li><a href="#p-refundfi" title="orbidal.xyz"><img src="img/logos/orbidal.svg" alt="orbidal.xyz" width="56" height="56"></a></li>
+        <li><a href="#p-aluba" title="aluba.xyz"><img src="img/logos/aluba.svg" alt="aluba.xyz" width="56" height="56"></a></li>
+        <li><a href="#p-refundfi" title="refund.fi"><img src="img/logos/refundfi.svg" alt="refund.fi" width="56" height="56"></a></li>
+        <li><a href="#p-digitalhandyman" title="digitalhandyman.london"><img src="img/logos/digitalhandyman.svg" alt="digitalhandyman.london" width="56" height="56"></a></li>
+        <li><a href="#p-taskman" title="taskman.xyz"><img src="img/logos/taskman.svg" alt="taskman.xyz" width="56" height="56"></a></li>
+        <li><a href="#smalls" title="Mealdealio"><img src="img/logos/mealdealio.svg" alt="Mealdealio" width="56" height="56"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="built" class="wrap section">
+    <header class="section-head">
+      <h2>Things I've built</h2>
+      <p>Side projects I've designed, coded, launched and still run, with Claude Code doing a lot of the typing. Each one shows what happens behind the scenes.</p>
+    </header>
+
+    <!-- psyconnect -->
+    <article class="project" id="p-psyconnect" style="--tint:#e4d6ec">
+      <div class="media">
+        <a class="window" href="https://psyconnect.london">
+          <img src="img/psyconnect.jpg" alt="psyconnect.london: upcoming events with date and topic filters, on a soft marbled background" loading="lazy" width="1600" height="1000">
+        </a>
+      </div>
+      <div class="about">
+        <div class="id"><img src="img/logos/psyconnect.svg" alt="" width="40" height="40"><p class="status live">Live</p></div>
+        <h3><a href="https://psyconnect.london">psyconnect.london</a></h3>
+        <p class="desc">Everything happening in person in London around consciousness, connection and ceremony, gathered in one calm place with a map and a weekly email.</p>
+        <p class="note hand">runs itself, twice a day, for pennies</p>
+        <h4>How it runs</h4>
+        <ol class="flow">
+          <li><b>Collect</b> from 14+ sources, from Eventbrite and Luma to WhatsApp groups</li>
+          <li><b>Clean</b> twice a day, merging duplicates across sources</li>
+          <li><b>Enrich</b> with Claude: tags, a one-line hook, even reading photo flyers</li>
+          <li><b>Publish</b> a static site, map and an SEO page per event</li>
+          <li><b>Email</b> a weekly digest per interest, drafted in Kit</li>
+        </ol>
+        <p class="stack"><span>Python</span><span>Supabase</span><span>Claude API</span><span>GitHub Actions</span><span>Leaflet</span><span>Kit</span></p>
+        <p class="more"><a href="https://github.com/adampluck/londo">See the code</a></p>
+      </div>
+    </article>
+
+    <!-- orbidal + refund.fi -->
+    <article class="project flip" id="p-refundfi" style="--tint:#2a1d3f">
+      <div class="media stack-two">
+        <a class="window" href="https://orbidal.xyz">
+          <img src="img/orbidal.jpg" alt="orbidal.xyz: 'SpaceX stock, from 50¢' beside a rocket on the launch pad at dusk" loading="lazy" width="1600" height="1000">
+        </a>
+        <a class="window" href="https://refund.fi">
+          <img src="img/refundfi.jpg" alt="refund.fi: 'Penny auctions for real crypto' with a live auction for 0.1 ETH" loading="lazy" width="1600" height="1000">
+        </a>
+      </div>
+      <div class="about">
+        <div class="id"><img src="img/logos/orbidal.svg" alt="" width="40" height="40"><img src="img/logos/refundfi.svg" alt="" width="40" height="40"><p class="status test">On testnet</p></div>
+        <h3><a href="https://orbidal.xyz">orbidal.xyz</a> <span class="and">&amp;</span> <a href="https://refund.fi">refund.fi</a></h3>
+        <p class="desc">A fairer penny auction, on-chain. Bids fund the prize first, then the surplus goes back to the people who didn't win. Orbidal is the space-themed brand with stock tokens as prizes. refund.fi runs crypto prizes on the same contract.</p>
+        <p class="note hand">one contract, two brands, anyone can run the bots</p>
+        <h4>How it runs</h4>
+        <ol class="flow">
+          <li><b>Bid</b> 50¢ to add 1¢ to the price and reset a 15-second clock</li>
+          <li><b>Settle</b> in a smart contract that holds every bid. No back office</li>
+          <li><b>Keep</b> things moving with bots that close auctions and fire auto-bids</li>
+          <li><b>Rebate</b> the surplus to losing bidders, and fund public goods</li>
+        </ol>
+        <p class="stack"><span>Solidity</span><span>Foundry</span><span>viem</span><span>Privy wallets</span><span>Chainlink</span><span>Fly.io</span><span>Cloudflare Workers</span></p>
+      </div>
+    </article>
+
+    <!-- aluba -->
+    <article class="project" id="p-aluba" style="--tint:#211b47">
+      <div class="media">
+        <a class="window" href="https://aluba.xyz">
+          <img src="img/aluba.jpg" alt="aluba testnet: 'Lowest. Unique. Bid. Wins.' above a live round with a 101.50 USDC prize" loading="lazy" width="1600" height="1000">
+        </a>
+      </div>
+      <div class="about">
+        <div class="id"><img src="img/logos/aluba.svg" alt="" width="40" height="40"><p class="status test">On testnet</p></div>
+        <h3><a href="https://aluba.xyz">aluba.xyz</a></h3>
+        <p class="desc">A lowest unique bid auction: the smallest bid nobody else matched wins. Bids stay sealed until the round ends, so nobody can peek, including me.</p>
+        <p class="note hand">even the explainer video is rendered from code</p>
+        <h4>How it runs</h4>
+        <ol class="flow">
+          <li><b>Verify</b> you're a real, unique adult with ZKPassport, sharing nothing else</li>
+          <li><b>Seal</b> each bid, time-locked to a future drand round</li>
+          <li><b>Reveal</b> the bids when the round ends, and settle automatically</li>
+          <li><b>Prove</b> the results with a zero-knowledge proof anyone can check</li>
+        </ol>
+        <p class="stack"><span>Aztec</span><span>Noir</span><span>Solidity</span><span>drand</span><span>ZKPassport</span><span>React</span><span>Cloudflare Workers</span></p>
+      </div>
+    </article>
+
+    <!-- digital handyman -->
+    <article class="project flip" id="p-digitalhandyman" style="--tint:#d3e5da">
+      <div class="media">
+        <a class="window" href="https://digitalhandyman.london">
+          <img src="img/digitalhandyman.jpg" alt="Digital Handyman: 'Online and digital help' beside an illustrated isometric town" loading="lazy" width="1600" height="1000">
+        </a>
+      </div>
+      <div class="about">
+        <div class="id"><img src="img/logos/digitalhandyman.svg" alt="" width="40" height="40"><p class="status live">Live</p></div>
+        <h3><a href="https://digitalhandyman.london">digitalhandyman.london</a></h3>
+        <p class="desc">My local service for households, small businesses and community groups: websites, spreadsheets, ads, automation and AI help, at a fixed price per job.</p>
+        <p class="note hand">click around the little town</p>
+        <h4>How it runs</h4>
+        <ol class="flow">
+          <li><b>Browse</b> hand-written HTML and CSS, with an interactive town</li>
+          <li><b>Ask</b> through a form, spam-checked by Cloudflare Turnstile</li>
+          <li><b>Deliver</b> each enquiry to my inbox through a tiny Worker</li>
+        </ol>
+        <p class="stack"><span>HTML &amp; CSS</span><span>Cloudflare Workers</span><span>Turnstile</span><span>Email Routing</span><span>£0 a month</span></p>
+      </div>
+    </article>
+
+    <!-- taskman -->
+    <article class="project" id="p-taskman" style="--tint:#2b2a28">
+      <div class="media phone">
+        <a href="https://taskman.xyz">
+          <img src="img/taskman.jpg" alt="Taskman on a phone: a dark screen asking 'What should I do?' with category and time filters" loading="lazy" width="600" height="1170">
+        </a>
+      </div>
+      <div class="about">
+        <div class="id"><img src="img/logos/taskman.svg" alt="" width="40" height="40"><p class="status live">Live</p></div>
+        <h3><a href="https://taskman.xyz">taskman.xyz</a></h3>
+        <p class="desc">A to-do list for when you can't decide. Say how long you've got and it picks your next task. Add tasks by talking: "call the bank, then book the dentist".</p>
+        <p class="note hand">works offline, $5 once for Pro</p>
+        <h4>How it runs</h4>
+        <ol class="flow">
+          <li><b>Speak</b> and AssemblyAI turns it into separate tasks</li>
+          <li><b>Sync</b> across devices after signing in with Google or an email code</li>
+          <li><b>Pick</b> a time and a category, and it chooses for you</li>
+        </ol>
+        <p class="stack"><span>JavaScript PWA</span><span>Supabase</span><span>Cloudflare Workers</span><span>AssemblyAI</span></p>
+        <p class="more"><a href="https://github.com/adampluck/taskman">See the code</a></p>
+      </div>
+    </article>
+
+    <h3 class="small-head" id="smalls">Smaller things</h3>
+    <ul class="smalls">
+      <li>
+        <a class="thumb" href="https://mealdealio.plucky101.workers.dev/"><img src="img/mealdealio.jpg" alt="" loading="lazy" width="600" height="1170"></a>
+        <div>
+          <h4><img src="img/logos/mealdealio.svg" alt="" width="22" height="22"><a href="https://mealdealio.plucky101.workers.dev/">Mealdealio</a></h4>
+          <p>The healthiest meal deal in the shop you're standing in, even offline. Products are scraped from the supermarkets and scored with Open Food Facts.</p>
+          <p class="stack"><span>React PWA</span><span>TypeScript</span><span>Supabase</span><span>Cloudflare</span></p>
+        </div>
+      </li>
+      <li>
+        <a class="thumb" href="https://yeswhen.app"><img src="img/yeswhen.jpg" alt="" loading="lazy" width="600" height="1170"></a>
+        <div>
+          <h4><span class="emoji" aria-hidden="true">🗓️</span><a href="https://yeswhen.app">yeswhen.app</a></h4>
+          <p>Find a date that works for everyone. Drag across dates, share a link, done. No sign-up.</p>
+          <p class="stack"><span>React</span><span>Supabase</span><span>GitHub Pages</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb leaf" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="56" height="56"><path d="M32 56V30M32 34c0-12 8-20 22-20 0 14-8 22-22 20ZM32 40c0-10-6-16-18-16 0 11 6 17 18 16Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h4><span class="emoji" aria-hidden="true">🪴</span>Plant tracker</h4>
+          <p>Tells me which houseplants need water or misting. A Google Sheet underneath, with Apps Script on top.</p>
+          <p class="stack"><span>Google Apps Script</span><span>Google Sheets</span></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="work" class="wrap section">
+    <header class="section-head">
+      <h2>Work</h2>
+      <p>The short version. There's more on <a href="https://www.linkedin.com/in/adampluck/">LinkedIn</a>.</p>
+    </header>
+    <ol class="jobs">
+      <li>
+        <div class="brand"><img src="img/logos/ready-wordmark.svg" alt="Ready" width="150" height="45"></div>
+        <div>
+          <p class="when">2020 to 2026, formerly Argent</p>
+          <h3 class="sr">Ready</h3>
+          <p class="role">Growth &amp; Data Lead</p>
+          <p class="what">Led growth and data for a leading self-custody Web3 wallet, and built its analytics, CRM and community from scratch.</p>
+          <ul class="figs">
+            <li><b>2M+</b> wallet accounts</li>
+            <li><b>$1bn+</b> in assets held</li>
+            <li><b>2.3M</b> NFT mints from one campaign</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="brand"><img src="img/logos/lovecrafts-wordmark.svg" alt="LoveCrafts" width="150" height="35"></div>
+        <div>
+          <p class="when">2012 to 2020</p>
+          <h3 class="sr">LoveCrafts</h3>
+          <p class="role">Head of Acquisition Marketing</p>
+          <p class="what">Joined as employee #4 and built the acquisition engine, including Google Ads that wrote and paused themselves from live stock, prices and margin.</p>
+          <ul class="figs">
+            <li><b>£200k+</b> monthly search spend</li>
+            <li><b>#3</b> Sunday Times Tech Track 100</li>
+            <li><b>FT 1000</b> fastest-growing in Europe</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="brand"><img class="swoopo" src="img/logos/swoopo-wordmark.png" alt="Swoopo" width="230" height="64"></div>
+        <div>
+          <p class="when">2007 to 2011</p>
+          <h3 class="sr">Swoopo</h3>
+          <p class="role">Marketing Manager, UK</p>
+          <p class="what">Ran search, display and affiliates for the UK through a period of fast growth, with custom SQL reporting behind it.</p>
+          <ul class="figs">
+            <li><b>1M+</b> keywords managed</li>
+            <li><b>800k</b> users on automated email</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="brand"><img src="img/logos/uea-wordmark.svg" alt="University of East Anglia" width="150" height="40"></div>
+        <div>
+          <p class="when">2002 to 2005</p>
+          <h3 class="sr">University of East Anglia</h3>
+          <p class="role">BSc Computer Science</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wrap section toolkit" aria-labelledby="kit-h">
+    <header class="section-head">
+      <h2 id="kit-h">What I work with</h2>
+    </header>
+    <div class="kit">
+      <div>
+        <h3>Growth</h3>
+        <p>Paid search &amp; social, CRM &amp; lifecycle email, affiliates, community, product marketing campaigns</p>
+      </div>
+      <div>
+        <h3>Data</h3>
+        <p>SQL, Amplitude, Metabase, Looker, Google Analytics &amp; Tag Manager, attribution</p>
+      </div>
+      <div>
+        <h3>Automation</h3>
+        <p>customer.io, Google Ads scripts, product feeds, scrapers, GitHub Actions, Apps Script</p>
+      </div>
+      <div>
+        <h3>Building</h3>
+        <p>HTML, CSS &amp; JavaScript, React, Python, Supabase, Cloudflare, Solidity, Claude Code</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap contact">
+    <h2>Say hello</h2>
+    <p>Happy to talk about growth roles, automation, or something you'd like built. The easiest way to reach me is on LinkedIn.</p>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/adampluck/">LinkedIn</a></li>
+      <li><a href="https://github.com/adampluck">GitHub</a></li>
+      <li><a href="https://digitalhandyman.london">Small jobs: Digital Handyman</a></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+# never publish the CV
+*.pdf
+src-img/
+.DS_Store

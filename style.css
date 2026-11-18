@@ -398,6 +398,3 @@ p { margin: 0; }
   .figs b { font-size: 1.6rem; }
   .media { border-radius: 22px; }
 }
-
-/* the only Swoopo logo left online has a rule under it; trim it off */
-.brand .swoopo { clip-path: inset(0 0 9% 0); margin-bottom: -4px; }

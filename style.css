@@ -197,6 +197,13 @@ p { margin: 0; }
 .quotes blockquote { margin: 0; font: italic 400 1.02rem/1.45 var(--serif); font-variation-settings: "SOFT" 100, "opsz" 24; }
 .quotes cite { display: block; margin-top: 4px; font-style: normal; font-size: .85rem; color: var(--muted); }
 
+.related {
+  display: flex; align-items: center; gap: 12px;
+  margin-top: calc(-1 * clamp(36px, 6vw, 80px));
+  color: var(--muted); font-size: .95rem;
+}
+.related img { flex: none; width: 28px; height: 28px; border-radius: 7px; }
+
 .stack-two { display: grid; }
 .stack-two .window { grid-area: 1 / 1; width: 82%; align-self: start; }
 .stack-two .window:last-child { justify-self: end; margin-top: 40%; }

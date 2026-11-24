@@ -177,6 +177,26 @@ p { margin: 0; }
 }
 .window img { width: 100%; display: block; }
 
+/* real photos get a plain rounded frame instead of browser chrome */
+.photo {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .12), 0 24px 48px -12px rgba(0, 0, 0, .3);
+}
+.photo img { width: 100%; display: block; }
+.emoji-badge {
+  display: grid; place-items: center;
+  width: 40px; height: 40px; border-radius: 10px;
+  background: var(--tint, var(--panel));
+  font-size: 1.3rem;
+}
+
+.quotes { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.quotes li { border-left: 3px solid var(--sun); padding: 2px 0 2px 16px; }
+.quotes blockquote { margin: 0; font: italic 400 1.02rem/1.45 var(--serif); font-variation-settings: "SOFT" 100, "opsz" 24; }
+.quotes cite { display: block; margin-top: 4px; font-style: normal; font-size: .85rem; color: var(--muted); }
+
 .stack-two { display: grid; }
 .stack-two .window { grid-area: 1 / 1; width: 82%; align-self: start; }
 .stack-two .window:last-child { justify-self: end; margin-top: 40%; }
